@@ -1,0 +1,3 @@
+# Dottmux
+
+Tmux configuration files.
