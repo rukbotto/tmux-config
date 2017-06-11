@@ -1,3 +1,3 @@
-# Dottmux
+# Tmux Config
 
 Tmux configuration files.
