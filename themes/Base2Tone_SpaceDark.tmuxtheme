@@ -8,20 +8,13 @@ set-option -g pane-active-border-bg default
 set-option -g pane-active-border-fg colour209
 
 # ============================================================================
-# Window configuration
-# ============================================================================
-
-set-window-option -g main-pane-height 35
-set-window-option -g main-pane-width 120
-
-# ============================================================================
 # Status bar configuration
 # ============================================================================
 
 set-option -g status-bg default
 set-option -g status-fg colour62
 
-set-option -g status-left " #S  "
+set-option -g status-left "#S  "
 set-option -g status-left-bg default
 set-option -g status-left-fg colour62
 set-option -g status-left-attr bold
