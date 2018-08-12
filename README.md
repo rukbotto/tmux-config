@@ -24,7 +24,7 @@ Finally, create a `.local.tmux.conf` file in your home folder:
 $ touch ~/.local.tmux.conf
 ```
 
-## MacOS settings
+### MacOS settings
 
 First you need to install the `reattach-to-user-namespace` package:
 
@@ -38,7 +38,7 @@ To enable MacOS settings, source the file `macos.tmux.conf` in your local config
 source-file "${HOME}/.tmux-config/macos.tmux.conf"
 ```
 
-## Color schemes
+### Color schemes
 
 This config enables 256 color support and provides a color scheme called cyanide. To use it, source the file `cyanide.tmux.conf` in your local config file:
 
