@@ -4,7 +4,7 @@ Rukbotto's tmux configuration files.
 
 ## Installation
 
-Clone this repo in your home directory:
+Clone this repo in your home folder:
 
 ```
 $ git clone https://github.com/rukbotto/tmux-config.git ~/.tmux-config
@@ -12,36 +12,36 @@ $ git clone https://github.com/rukbotto/tmux-config.git ~/.tmux-config
 
 ## Usage
 
-Link `.tmux.conf` file to your home directory:
+Link the `tmux.conf` file to your home folder:
 
 ```
-$ ln -svf ~/.tmux-config/.tmux.conf ~/.tmux.conf
+$ ln -svf ~/.tmux-config/tmux.conf ~/.tmux.conf
 ```
 
-Create a `.tmux.local` file so you can set up your favorite theme, or
-otherwise, overwrite the default configuration:
+Finally, create a `.local.tmux.conf` file in your home folder:
 
 ```
-$ touch ~/.tmux.local
-$ vim ~/.tmux.local
+$ touch ~/.local.tmux.conf
 ```
 
-## Themes
+## MacOS settings
 
-The `.tmux.conf` file included in this repo enables 256 color support.
-
-This repo currently ships with a single color scheme called
-`Base2Tone_SpaceDark`, which is based on [Base2Tone_SpaceDark][1] color scheme
-for Vim. It's not set by default, but if you want to give it a try, place the
-following lines in your `.tmux.local` file:
+First you need to install the `reattach-to-user-namespace` package:
 
 ```
-source-file "${HOME}/.tmux-config/themes/Base2Tone_SpaceDark.tmuxtheme"
+$ brew install reattach-to-user-namespace
 ```
 
-## Credits
+To enable MacOS settings, source the file `macos.tmux.conf` in your local config file:
 
-+ [Braam de Haan][2] for authoring [Base2Tone_SpaceDark][1] color scheme for Vim.
+```
+source-file "${HOME}/.tmux-config/macos.tmux.conf"
+```
 
-[1]: https://github.com/atelierbram/Base2Tone-vim
-[2]: https://github.com/atelierbram/
+## Color schemes
+
+This config enables 256 color support and provides a color scheme called cyanide. To use it, source the file `cyanide.tmux.conf` in your local config file:
+
+```
+source-file "${HOME}/.tmux-config/colors/cyanide.tmux.conf"
+```
