@@ -1,6 +1,6 @@
 # Tmux Config
 
-Rukbotto's tmux configuration files.
+Tmux configuration files.
 
 ## Installation
 
