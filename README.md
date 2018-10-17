@@ -43,5 +43,5 @@ source-file "${HOME}/.tmux-config/macos.tmux.conf"
 This config enables 256 color support and provides a color scheme called cyanide. To use it, source the file `cyanide.tmux.conf` in your local config file:
 
 ```
-source-file "${HOME}/.tmux-config/colors/cyanide.tmux.conf"
+source-file "${HOME}/.tmux-config/colors.tmux.conf"
 ```
